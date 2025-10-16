@@ -6,10 +6,12 @@ int main() {
 
     while (scanf("%lf", &x) == 1) { 
         /* TODO: complete the loop to calculate and print the running total and average */
-        total += x;
-        double count;
-        count++;
 
+        //repeatedly adding user input until false
+        total += x;
+        double count; 
+        count++; //increments count
+        //total
         average = total / count;
         printf("Total=%.3lf Average=%.3lf\n", total, average);
     };

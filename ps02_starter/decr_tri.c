@@ -18,8 +18,10 @@ int main() {
 
     scanf("%d", &n);
 
-    for(int x = 0; x < n-1; x++ ){
-        for(int c = n; c > 0; c-- ){
+    int temp = n;
+
+    for(int x = 0; x < temp; x++ ){
+        for(int c = n--; c > 0; c-- ){
             printf("*");
         }
         printf("\n");

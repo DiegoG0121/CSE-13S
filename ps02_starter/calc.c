@@ -72,9 +72,8 @@ int main() {
                 printf("Result: %d / %d = %.2lf\n", num1, num2, divide(num1,num2));
                 break;
             case 5:
-                printf("Result: %d %/ %d = %.2lf\n", num1, num2, (double)modulus(num1,num2));
+                printf("Result: %d %% %d = %.2lf\n", num1, num2, (double)modulus(num1,num2));
                 break;
-            
             default:
                 printf("Invalid choice. Please enter a number from 1 to 6.\n");
                 break;

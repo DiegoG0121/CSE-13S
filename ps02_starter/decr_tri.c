@@ -22,7 +22,7 @@ int main() {
 
     for(int x = 0; x < temp; x++ ){
         for(int c = n--; c > 0; c-- ){
-            printf("*");
+            printf("* ");
         }
         printf("\n");
     }

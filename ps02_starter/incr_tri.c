@@ -16,6 +16,14 @@ int main() {
 
     /* TODO: read the value for n and print the first n rows of the above pattern */
     
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++){
+        for(int c = 0; c < i+1; c++){
+            printf("* ");
+        }
+        printf("\n");
+    }
 
     return 0;
 }

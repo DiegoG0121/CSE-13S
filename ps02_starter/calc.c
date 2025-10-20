@@ -48,13 +48,17 @@ int main() {
             if(choice == 4){
                 printf("Error: Division by zero is not allowed.\n");
                 goto start_loop;
-            } else {
+            } else if(choice == 5){
                 printf("Error: Modulus by zero is not allowed.\n");
                 goto start_loop;
+            } else {
+                goto switch_start;
             }
         }
 
+        switch_start:
         switch(choice){
+
             case 1:
                 printf("Result: %d + %d = %.2lf\n", num1, num2, (double)add(num1,num2));
                 break;

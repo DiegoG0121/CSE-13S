@@ -18,17 +18,19 @@ int main() {
 
   scanf("%d", &n);
 
+  // loops for number of rows based on n
   for(int x = 0; x < n; x++){
+
+    // prints # of space between start and end of # of asterix
     for(int j = 0; j < n - x -1; j++) {
       printf("  ");
     }
-
+    // prints asterix at the end of space based on quantity to print
     printf("*");
-
     for(int a = 0; a < x; a++) {
       printf(" *");
     }
-
+    // prints newline
     printf("\n");
   }
 

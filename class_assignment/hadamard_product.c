@@ -12,11 +12,4 @@ int main(){
                 {7, 5, 1},
                 {4, 6, 7}};
 
-
-    for(int x = 0; x < a; x++) {
-        for(int c = 0; c < a[x]; c++)
-            printf("%d", a[x][c]* b[x][c]);
-        printf("\n");
-    }
-
 }

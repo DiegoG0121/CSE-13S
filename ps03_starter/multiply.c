@@ -34,7 +34,7 @@ int main() {
         for (int j = 0; j < q; j++)
             scanf("%d", &b[i][j]);
 
-    printf("Enter %d values for matrix b: ", p * q);
+    
     for(int x = 0; x < n; x++)
         for(int y = 0; y < q; y++) {
             c[x][y] = 0;

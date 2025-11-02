@@ -4,6 +4,10 @@
 
 int getMSDigit(int x) {
    /* TODO: extract the leading digit of integer x and return it */
+   if(x == 0) return 0;
+
+   if (x < 0) x = -x;
+
    while(x >= 10) x = x/10;
 
    return x;

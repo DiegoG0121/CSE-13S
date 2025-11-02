@@ -5,11 +5,10 @@
 int getMSDigit(int x) {
    /* TODO: extract the leading digit of integer x and return it */
    if(x == 0) return 0;
+   if(x < 0) x = -x;
 
-   if (x < 0) x = -x;
-
-   while(x >= 10) x = x/10;
-
+   while(x >= 10) x /= 10;
+   
    return x;
 }
 
@@ -28,10 +27,8 @@ int main() {
 
    // loops till EOF
    while(scanf("%d", &user_num) != EOF){
-      if(user_num > 0){
-         int freqd = getMSDigit(user_num);
-         freq[freqd]++; // adds frequncy onto the array
-      }
+      int freqd = getMSDigit(user_num);
+      freq[freqd]++;
    }
 
    // prints the information/ frequncies stored in the array freq

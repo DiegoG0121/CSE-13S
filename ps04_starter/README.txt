@@ -18,7 +18,8 @@ cleanly, removing all unnecessary trailing spaces or formatting symbols.
 "Why This Works" Explanation: Explain the underlying logic and reasoning that makes your code solve the problem. 
 Focus on the core concepts and principles your solution utilizes.
 
-
+Firstly, I seperated my functions with my main function for neat code, I created 2 function toLower_case(accepting
+an array a and size of the array) and isPalindrome(has the same parameters)
 
 3. Filtering and sorting zoo records
 "Why This Works" Explanation: Explain the underlying logic and reasoning that makes your code solve the problem. 

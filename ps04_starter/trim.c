@@ -9,6 +9,13 @@ void trim(char s[]) {
     * You may, however, write your own string functions that you need.
     */
 
+    int length = strlen(s);
+
+    while(s[length-1] == '\n' || s[length-1] == ' ' || s[length-1] == '\t' || s[length-1] == '\r'){
+      s[length-1] = '\0';
+      ++length;
+    }
+
 }
 
 int main() {

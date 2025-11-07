@@ -11,11 +11,22 @@ void trim(char s[]) {
 
     int length = strlen(s);
 
-    while(s[length-1] == '\n' || s[length-1] == ' ' || s[length-1] == '\t' || s[length-1] == '\r'){
-      s[length-1] = '\0';
-      ++length;
-    }
+    while(1){
+      if(s[length-1] == '\n' || s[length-1] == '\t' || s[length-1] == '\r'){
+         s[length-1] = '\0';
+         --length;
+      }
 
+      if(s[length-1] == ' '){
+         for(int i = --length; s[i] == ' '; i--){
+            s[i] = '\0';
+         }
+      } else {
+         break;
+      }
+
+      break;
+    }
 }
 
 int main() {
